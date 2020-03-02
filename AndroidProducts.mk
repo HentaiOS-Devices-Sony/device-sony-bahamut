@@ -12,12 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_j8210.mk \
-                     $(LOCAL_DIR)/aosp_j9210.mk
-
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/hentai_bahamut_RoW.mk \
+    $(LOCAL_DIR)/hentai_bahamut_DSDS.mk
+    
 COMMON_LUNCH_CHOICES += \
-    aosp_j8210-eng \
-    aosp_j8210-userdebug \
-    aosp_j9210-eng \
-    aosp_j9210-userdebug
-
+    hentai_bahamut_RoW-eng \
+    hentai_bahamut_RoW-userdebug \
+    hentai_bahamut_RoW-user \
+    hentai_bahamut_DSDS-eng \
+    hentai_bahamut_DSDS-userdebug \
+    hentai_bahamut_DSDS-user
