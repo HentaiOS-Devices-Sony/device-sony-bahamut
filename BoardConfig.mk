@@ -19,6 +19,10 @@ ifneq (,$(filter %hentai_bahamut_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := J8210
 else ifneq (,$(filter %hentai_bahamut_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := J9210
+else ifneq (,$(filter %hentai_bahamut_RoW_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := J8210
+else ifneq (,$(filter %hentai_bahamut_DSDS_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := J9210
 else
 TARGET_BOOTLOADER_BOARD_NAME := J8210
 $(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
